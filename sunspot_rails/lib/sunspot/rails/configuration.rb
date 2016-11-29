@@ -73,7 +73,7 @@ module Sunspot #:nodoc:
           @hosts = [user_configuration_from_key('solr', 'hosts')].flatten.compact.
             map { |host| host.prepend("#{scheme}://") unless host[SCHEME_EXP] }
         end
-        puts @hosts
+        
         @hosts
       end
       
